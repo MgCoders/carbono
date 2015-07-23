@@ -7,7 +7,7 @@ router.post('/', function (req, res, next) {
 
     var telegramUpdate = req.body;
 
-    // Message must start with '/weather'
+    // Message must start with '/hi'
     var telegramMessage = telegramUpdate.message.text;
     if (telegramMessage.lastIndexOf('/hi', 0) === 0) {
 
